@@ -1,0 +1,16 @@
+//Assignment-2 Write a program to print given number is Armstrong number or not
+#include<stdio.h>
+main(){
+	int n,num,rem,sum=0;
+	scanf("%d",&n);
+	num=n;
+	while(n!=0){
+	rem=n%10;
+	sum=sum+(rem*rem*rem);
+	n=n/10;
+	}
+	if(sum==num)
+	printf("Amstrong number");
+	else
+	printf("Not a Amstrong number");
+}
